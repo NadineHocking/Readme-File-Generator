@@ -6,7 +6,7 @@ from .licenses import license_choices
 
 
 class Questionnaire:
-    # Collects README details from the user via interactive CLI prompts."""
+    # Collects readme details from the user via interactive CLI prompts."""
 
     def __init__(self):
         self._questions = [
