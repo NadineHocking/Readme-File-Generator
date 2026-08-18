@@ -1,4 +1,4 @@
-# license dropdown used in the README generator. The key is the name of the license, and the value is a License object containing the name and URL of the license.
+from typing import Dict, List
 from dataclasses import dataclass
 
 
@@ -14,7 +14,7 @@ class License:
 # Ordered mapping of the licenses offered in the dropdown/select prompt.
 # "Name" is what the user sees; the License object carries the markdown
 # snippets used later when the README is generated.
-LICENSES: dict[str, License] = {
+LICENSES: Dict[str, License] = {
     "MIT": License(
         name="MIT",
         badge_markdown="![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
@@ -48,7 +48,7 @@ LICENSES: dict[str, License] = {
 }
 
 
-def license_choices() -> list[str]:
+def license_choices() -> List[str]:
     return list(LICENSES.keys())
 
 
