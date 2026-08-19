@@ -41,11 +41,11 @@ Supported Versions: PyInquirer only runs reliably on **Python 3.6 to Python 3.9*
 
 1. Clone the repository
 
-   ` ` `bash
+   ```bash
    git clone https://github.com/NadineHocking/Readme-File-Generator.git
    cd Readme-File-Generator
 
-   ` ` `
+   ```
 
 2. Setup a compatible Python environment
 
@@ -61,16 +61,16 @@ Windows: Use `pyenv-win` via PowerShell: `Invoke-WebRequest -UseBasicParsing -Ur
 
 **2.2. Install a supported Python version**
 Install Python 3.9 (the highest stable version supported by the library):
-` ` `bash
+```bash
 pyenv install 3.9.19
-` ` `
+```
 
 **2.3. Set your local Python version**
 Navigate to your project directory and set it to use the newly installed version:
-` ` `bash
+```bash
 cd your-project-directory
 pyenv local 3.9.19
-` ` `
+```
 Verify the change worked by running `python --version`.
 
 **2.4. Create and Activate a Virtual Environment**
@@ -88,18 +88,18 @@ source .venv/bin/activate
 
 **2.5. Install PyInquirer**
 Once your environment is active and running Python 3.9, install the package securely:
-` ` `bash
+```bash
 pip install PyInquirer
-` ` `
+```
 
 ## Usage
 
 Run the application as a module from the project root (with your
 virtual environment activated):
 
-` ` `bash
+```bash
 python -m src.main
-` ` `
+```
 
 Answer each prompt as it appears. When finished, a `readme.md` file
 will be written to the current directory and the tool will print its
@@ -107,18 +107,18 @@ full path.
 
 To deactivate the virtual environment when you're done:
 
-` ` `bash
+```bash
 deactivate
-` ` `
+```
 
 ## Running the Tests
 
 The core markdown-generation logic is covered by unit tests that don't
 require an interactive terminal:
 
-` ` `bash
+```bash
 python -m unittest discover tests
-` ` `
+```
 
 ## Author
 
